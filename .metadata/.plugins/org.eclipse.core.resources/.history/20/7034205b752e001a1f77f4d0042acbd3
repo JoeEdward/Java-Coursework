@@ -1,0 +1,20 @@
+package main;
+
+import java.util.ArrayList;
+
+import lib.Player;
+
+public class PlayerApp {
+
+	public static String execute(ArrayList<Player> players, String fullName) {
+		
+		Player P1 = players.get(0);
+		
+		P1.setFullPlayerName(fullName);
+		
+		System.out.println(P1.getName().toString());
+		
+		return "";
+	}
+	
+}
