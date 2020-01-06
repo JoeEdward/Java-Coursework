@@ -95,6 +95,22 @@ public class Player implements Rollable, Comparable<Player> {
     	
     	return FN + ", " + LN;
     }
+    
+   public boolean hasName(Name n) {
+	   try {
+		   if (this.name.compareTo(n) == 0) {
+			   return true;
+		   }else {
+			   return false;
+		   }	
+	   } catch(Exception e) {
+		   if (n==null && this.name == null) {
+			   return true;
+		   }else {
+			   return false;
+			   }
+	   }
+   }
     /*
      * compares the names to implement the comparable interface
      */
